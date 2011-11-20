@@ -1,0 +1,27 @@
+Changelog
+=========
+
+1.1.0 — Upgrade Containerize
+----------------------------
+
+This release makes edrndmcc.appserver compatible with:
+
+* Zope 2.13
+* Plone 4.1
+* plone.testing 4.0.2
+
+It also prepares the app server for decommissioning on ginger.fhcrc.org and
+relocating at the EDRN Informatics Center.
+
+
+1.0.0 — FCS
+-----------
+
+Official release ready-to-run.
+
+
+0.0.0 — Unreleased
+------------------
+
+* Initial release
+
