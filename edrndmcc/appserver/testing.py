@@ -1,22 +1,20 @@
 # encoding: utf-8
-# Copyright 2011 California Institute of Technology. ALL RIGHTS
+# Copyright 2011–2012 California Institute of Technology. ALL RIGHTS
 # RESERVED. U.S. Government Sponsorship acknowledged.
 
 from edrn.rdf.testing import EDRN_RDF
 from plone.app.testing import PloneSandboxLayer, IntegrationTesting, FunctionalTesting, PLONE_FIXTURE
-from plone.testing import z2
+from Products.CMFCore.utils import getToolByName
 
 class EDRN_DMCC_AppServerLayer(PloneSandboxLayer):
     defaultBases = (EDRN_RDF, PLONE_FIXTURE,)
     def setUpZope(self, app, configurationContext):
-        import edrndmcc.appserver
+        import edrndmcc.appserver, edrn.rdf
         self.loadZCML(package=edrndmcc.appserver)
-        z2.installProduct(app, 'edrndmcc.appserver')
     def setUpPloneSite(self, portal):
+        wfTool = getToolByName(portal, 'portal_workflow')
+        wfTool.setDefaultChain('plone_workflow')
         self.applyProfile(portal, 'edrndmcc.appserver:default')
-    def tearDownZope(self, app):
-        z2.uninstallProduct(app, 'edrndmcc.appserver')
-
     
 EDRN_DMCC_APP_SERVER = EDRN_DMCC_AppServerLayer()
 EDRN_DMCC_APP_SERVER_INTEGRATION_TESTING = IntegrationTesting(

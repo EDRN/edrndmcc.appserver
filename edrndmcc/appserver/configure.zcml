@@ -18,5 +18,13 @@ RESERVED. U.S. Government Sponsorship acknowledged.
         description='Turns a Plone site into a EDRN DMCC Application Server.'
         provides='Products.GenericSetup.interfaces.EXTENSION'
     />
-        
+
+    <genericsetup:importStep
+        name='edrndmcc.appserver'
+        title='EDRN DMCC Application Server import handlers'
+        description='Creates support data for the EDRN DMCC Application Server.'
+        handler='edrndmcc.appserver.setuphandlers.setupVarious'>
+        <depends name='content' />
+    </genericsetup:importStep>
+
 </configure>

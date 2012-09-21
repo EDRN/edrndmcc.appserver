@@ -21,18 +21,21 @@ class SetupTest(unittest.TestCase):
     def testPortalDescription(self):
         '''Test if the site's description is set correctly.'''
         self.assertEquals('Application server for the Data Management and Coordinating Center (DMCC) of the Early Detection Research Network (EDRN).', self.portal.getProperty('description'))
-    def testNASAResponsibleParties(self):
-        '''Test if the NASA-mandated responsible party names are set correctly.'''
-        self.assertEquals('Sean Kelly', self.portal.getProperty('executive_editor'))
-        self.assertEquals('Dan Crichton', self.portal.getProperty('nasa_official'))
     def testIfEDRNRDFServiceAvailable(self):
         types = getToolByName(self.portal, 'portal_types')
-        self.failUnless('Body System' in types.objectIds(), 'EDRN RDF Service not installed')
+        self.failUnless('edrn.rdf.rdfsource' in types.objectIds(), 'EDRN RDF Service not installed')
     def testIfThemeInstalled(self):
-      skins = getToolByName(self.portal, 'portal_skins')
-      layer = skins.getSkinPath('EDRN Theme')
-      self.failUnless(layer, 'Theme layer missing from skins tool')
-      self.assertEquals('EDRN Theme', skins.getDefaultSkin(), 'EDRN theme not default skin')
+        skins = getToolByName(self.portal, 'portal_skins')
+        layer = skins.getSkinPath('EDRN Theme')
+        self.failUnless(layer, 'Theme layer missing from skins tool')
+        self.assertEquals('EDRN Theme', skins.getDefaultSkin(), 'EDRN theme not default skin')
+    def testHomePage(self):
+        homePage = self.portal['front-page']
+        wfTool = getToolByName(self.portal, 'portal_workflow')
+        state = wfTool.getInfoFor(homePage, 'review_state')
+        self.assertEquals('published', state, "Home page isn't published, should be")
+        text = homePage.getText()
+        self.failUnless(u"This server hosts web services to support EDRN's mission" in text, 'Home page text not set')
     
 def test_suite():
     return unittest.defaultTestLoader.loadTestsFromName(__name__)
