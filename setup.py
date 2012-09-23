@@ -26,9 +26,10 @@ _entryPoints     = {
     'z3c.autoinclude.plugin': ['target=plone'],
 }
 _requirements = [
-    'Plone',
-    'edrn.theme',
     'edrn.rdf',
+    'edrn.theme',
+    'Plone',
+    'plone.app.ldap',
     'setuptools',
 ]
 _extras = {
