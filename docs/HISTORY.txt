@@ -1,6 +1,14 @@
 Changelog
 =========
 
+1.2.0 — Fully Webbed
+--------------------
+
+This release starts over with a fresh set of staff photographs and the
+SOAP-based web-service calling edrn.rdf package.  It also automates the setup
+of most settings.
+
+
 1.1.0 — Upgrade Containerize
 ----------------------------
 
