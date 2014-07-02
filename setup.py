@@ -1,5 +1,5 @@
 # encoding: utf-8
-# Copyright 2008-2011 California Institute of Technology. ALL RIGHTS
+# Copyright 2008-2014 California Institute of Technology. ALL RIGHTS
 # RESERVED. U.S. Government Sponsorship acknowledged.
 
 from setuptools import setup, find_packages

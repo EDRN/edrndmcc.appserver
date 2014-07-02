@@ -1,10 +1,12 @@
 Changelog
 =========
 
-1.2.1 — TBD
------------
 
-This release makes the tests pass on Plone 4.2.2.
+1.2.1 — Pass the FLOSS
+----------------------
+
+This release makes the tests pass on Plone 4.2.2.  It also makes it free, libre,
+open source software.
 
 
 1.2.0 — Fully Webbed
