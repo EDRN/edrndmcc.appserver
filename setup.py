@@ -9,7 +9,7 @@ import os.path
 # ------------
 
 _name            = 'edrndmcc.appserver'
-_version         = '1.2.1'
+_version         = '1.2.2'
 _description     = 'EDRN DMCC Application Server policy'
 _author          = 'Sean Kelly'
 _authorEmail     = 'sean.kelly@jpl.nasa.gov'
