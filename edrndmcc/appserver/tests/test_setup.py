@@ -5,7 +5,7 @@
 '''Tests for the setup of the site policy.
 '''
 
-import unittest2 as unittest
+import unittest
 from Products.CMFCore.utils import getToolByName
 from edrndmcc.appserver.testing import EDRN_DMCC_APP_SERVER_FUNCTIONAL_TESTING
 
