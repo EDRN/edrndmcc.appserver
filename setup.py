@@ -1,5 +1,5 @@
 # encoding: utf-8
-# Copyright 2008-2014 California Institute of Technology. ALL RIGHTS
+# Copyright 2008-2015 California Institute of Technology. ALL RIGHTS
 # RESERVED. U.S. Government Sponsorship acknowledged.
 
 from setuptools import setup, find_packages
@@ -24,11 +24,12 @@ _entryPoints     = {
     'z3c.autoinclude.plugin': ['target=plone'],
 }
 _requirements = [
+    'setuptools',
     'edrn.rdf',
     'edrn.theme',
+    'Pillow',
     'Plone',
     'plone.app.ldap',
-    'setuptools',
 ]
 _extras = {
     'test': ['plone.app.testing'],
