@@ -2,6 +2,13 @@ Changelog
 =========
 
 
+1.2.2 — Packaging
+-----------------
+
+• Obey PyPI's new restrictions on package hosting, PEP-470.
+• Upgrade for Travis-CI container & caching mechanisms.
+
+
 1.2.1 — Pass the FLOSS
 ----------------------
 
