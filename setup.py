@@ -26,6 +26,7 @@ _entryPoints     = {
 _requirements = [
     'setuptools',
     'edrn.rdf',
+    'edrn.summarizer',
     'edrn.theme',
     'Pillow',
     'Plone',
