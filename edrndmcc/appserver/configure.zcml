@@ -19,6 +19,14 @@ RESERVED. U.S. Government Sponsorship acknowledged.
         provides='Products.GenericSetup.interfaces.EXTENSION'
     />
 
+    <genericsetup:registerProfile 
+        name='summarizer'
+        title='"EDRN Summarizer Application Server" Policy'
+        directory='profiles/summarizer'
+        description='Turns a Plone site into a EDRN Summarizer Application Server.'
+        provides='Products.GenericSetup.interfaces.EXTENSION'
+    />
+
     <genericsetup:importStep
         name='edrndmcc.appserver'
         title='EDRN DMCC Application Server import handlers'
