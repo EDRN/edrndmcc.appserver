@@ -11,3 +11,10 @@ RESERVED. U.S. Government Sponsorship acknowledged.
         <dependency>profile-edrn.theme:default</dependency>
     </dependencies>
 </metadata>
+<metadata>
+	<version>2</version>
+    <description>EDRN Summarizer Application Server policy</description>
+    <dependencies>
+        <dependency>profile-edrn.summarizer:default</dependency>
+    </dependencies>
+</metadata>
