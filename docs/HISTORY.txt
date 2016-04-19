@@ -2,6 +2,11 @@ Changelog
 =========
 
 
+1.2.3 — Integrating
+-----------------
+
+• Integrated edrn.summarizer with edrn.rdf to server more than just rdf but also json data.
+
 1.2.2 — Packaging
 -----------------
 
