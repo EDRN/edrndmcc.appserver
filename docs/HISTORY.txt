@@ -2,10 +2,19 @@ Changelog
 =========
 
 
+1.2 4 — Upgrading
+-----------------
+
+• Added upgrade steps to install dependent add-ons when upgrading operational
+  DMCCBackend/CancerDataExpo site.
+
+
 1.2.3 — Integrating
 -------------------
 
-• Integrated edrn.summarizer with edrn.rdf to server more than just rdf but also json data.
+• Integrated edrn.summarizer with edrn.rdf to server more than just rdf but
+  also json data.
+
 
 1.2.2 — Packaging
 -----------------

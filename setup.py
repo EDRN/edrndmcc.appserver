@@ -9,7 +9,7 @@ import os.path
 # ------------
 
 _name            = 'edrndmcc.appserver'
-_version         = '1.2.3'
+_version         = '1.2.4'
 _description     = 'EDRN DMCC Application Server policy'
 _author          = 'Sean Kelly'
 _authorEmail     = 'sean.kelly@jpl.nasa.gov'
@@ -31,6 +31,7 @@ _requirements = [
     'Pillow',
     'Plone',
     'plone.app.ldap',
+    'plone.api',
 ]
 _extras = {
     'test': ['plone.app.testing'],

@@ -7,6 +7,7 @@ RESERVED. U.S. Government Sponsorship acknowledged.
     xmlns='http://namespaces.zope.org/zope'
     xmlns:five='http://namespaces.zope.org/five'
     xmlns:genericsetup='http://namespaces.zope.org/genericsetup'
+    xmlns:zcml='http://namespaces.zope.org/zcml'
     i18n_domain='edrndmcc.appserver'>
 
     <includeDependencies package='.' />
@@ -35,4 +36,8 @@ RESERVED. U.S. Government Sponsorship acknowledged.
         <depends name='content' />
     </genericsetup:importStep>
 
+    <include
+        zcml:condition='installed Products.GenericSetup.upgrade'
+        file='upgrades.zcml'
+    />
 </configure>
