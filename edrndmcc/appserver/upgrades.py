@@ -8,3 +8,6 @@ import plone.api
 def upgrade2to3(setupTool):
     qi = plone.api.portal.get_tool('portal_quickinstaller')
     qi.installProduct('edrn.summarizer')
+def upgrade3to4(setupTool):
+    qi = plone.api.portal.get_tool('portal_quickinstaller')
+    qi.upgradeProduct('edrn.summarizer')

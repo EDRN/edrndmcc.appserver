@@ -4,7 +4,7 @@ Copyright 2008–2016 California Institute of Technology. ALL RIGHTS
 RESERVED. U.S. Government Sponsorship acknowledged.
 -->
 <metadata>
-	<version>3</version>
+	<version>4</version>
     <description>EDRN DMCC Application Server &amp; Cancer Data Expo policy</description>
     <dependencies>
         <dependency>profile-edrn.rdf:default</dependency>
